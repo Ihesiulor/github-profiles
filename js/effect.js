@@ -17,19 +17,19 @@ const init = () => {
     if (page === "/profile.html") {
       handleDisplay();
     }
-    if (toggle||toggleOff) {
-      toggle.addEventListener("click", (e) => {
-        e.preventDefault();
+    if (toggle || toggleOff) {
+      toggle.addEventListener("click", (event) => {
+        event.preventDefault();
         if (menu.style.transform === "translateX(101%)") {
-          menu.style.transform="translateX(0%)";
+          menu.style.transform = "translateX(0%)";
         } else {
           menu.style.transform = "translateX(101%)";
         }
       });
-            toggleOff.addEventListener("click", (e) => {
-        e.preventDefault();
+      toggleOff.addEventListener("click", (eve) => {
+        eve.preventDefault();
         if (menu.style.transform === "translateX(101%)") {
-          menu.style.transform="translateX(0%)";
+          menu.style.transform = "translateX(0%)";
         } else {
           menu.style.transform = "translateX(101%)";
         }
